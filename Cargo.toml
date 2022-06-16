@@ -1,0 +1,21 @@
+[package]
+name = "ms"
+version = "0.1.0"
+edition = "2021"
+
+[[example]]
+name = "search"
+path = "examples/search.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.57"
+async-trait = "0.1.53"
+lazy_static = "1.4.0"
+regex = "1.5.6"
+reqwest = "0.11.11"
+select = "0.5.0"
+serde = { version = "1.0.137", features = ["derive"] }
+serde_json = "1.0.81"
+tokio = { version = "1.19.2", features = ["full"] }
