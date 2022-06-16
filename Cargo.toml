@@ -4,8 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [[example]]
-name = "search"
-path = "examples/search.rs"
+name = "cupfox"
+path = "examples/cupfox.rs"
+
+[[example]]
+name = "vm"
+path = "examples/vm.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

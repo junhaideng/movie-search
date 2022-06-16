@@ -32,7 +32,7 @@ impl Spider for Cupfox {
 
         // 限制同时请求的个数
         let semaphore = Arc::new(Semaphore::new(self.permit));
-        for page in self.offset..=total_pages.min(self.limit+self.offset) {
+        for page in self.offset..=total_pages.min(self.limit + self.offset) {
             let permit = semaphore.clone().acquire_owned().await?;
             let w = word.clone();
             handlers.push(tokio::spawn(async move {

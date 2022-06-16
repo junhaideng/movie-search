@@ -2,6 +2,7 @@
 
 搜索免费电影，目前搜索源:
 - [Cupfox](https://www.cupfox.cc/)
+- [4kvm](https://www.4kvm.com/)
 - ...
 
 ### Movie Item
@@ -22,7 +23,10 @@ pub struct MovieItem {
 ### Examples
 见目录 [examples](examples)
 ```bash
-cargo run --example search -- 你好世界
+# cupfox
+cargo run --example cupfox -- 你好世界
+# 4kvm
+cargo run --example vm -- 你好世界
 ```
 `JSON` 结果
 ```json
